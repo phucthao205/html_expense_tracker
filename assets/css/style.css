@@ -1,0 +1,379 @@
+/* start custom bootstrap */
+
+button.btn-info {
+    background-color: var(--color-teal-1);
+}
+
+button.btn-info:hover {
+    background-color: var(--color-teal-2);
+}
+
+button.pd-primary {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+/* end custom bootstrap */
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    background: var(--bg-body);
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.slide-up-down {
+    height: 0px !important;
+    overflow: hidden;
+    transition: height 0.25s ease-out;
+}
+
+#box_sidebar {
+    
+}
+
+#box_sidebar .sidebar {
+    height: calc(100vh);
+    box-shadow: 0 3px 7px 0 var(--color-black-2);
+    background-color: var(--bg-block);
+    position: fixed;
+}
+
+#box_sidebar .logo {
+    padding: 0 12px;
+    height: 98px;
+}
+
+#box_sidebar .logo img {
+    width: 140px;
+    height: auto;
+}
+
+#box_sidebar .sidebar .menu ul {
+    padding: 0 12px;
+}
+
+#box_sidebar .sidebar .menu ul li {
+    padding: 12px 12px;
+    cursor: pointer;
+}
+
+#box_sidebar .sidebar .menu ul li:hover {
+    background-color: var(--color-teal-1);
+    border-radius: 8px;
+}
+
+#box_sidebar .sidebar .menu ul li i {
+    font-size: 20px;
+}
+
+#box_sidebar .sidebar .menu ul li span {
+    margin-left: 4px;
+    font-size: 15px;
+}
+
+#box_sidebar .sidebar .box-user {
+    padding: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#box_sidebar .sidebar .box-user .info {
+    height: 50px;
+    padding: 12px 12px;
+    display: flex;
+    align-items: center;
+}
+
+#box_sidebar .sidebar .box-user .info:hover {
+    cursor: pointer;
+    background-color: var(--color-teal-1);
+    border-radius: 8px;
+}
+
+#box_sidebar .sidebar .box-user .info .avatar {
+    width: 35px;
+    height: 35px;
+    background: #5d4037;
+    color:#ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box_right .header {
+    background: var(--color-teal-1);
+    height: 50px;
+    padding: 0 24px 0 12px;
+}
+
+#box_right .header .icon-menu {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#box_right .header .icon-menu i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#box_right .box_content {
+    padding: 74px 24px 24px 24px;
+}
+
+#box_right .box_content .content {
+    background-color: var(--bg-block);
+    padding: 12px 18px;
+    box-shadow: 0px 0px 4px 0px var(--color-black-2);
+    border-radius: 16px;
+    min-height: calc(100vh - 140px);
+}
+
+#box_right .box_content .content .transaction .box-item {
+    padding: 8px 0;
+}
+
+#box_right .box_content .content .transaction .box-item .title {
+    padding: 8px;
+    font-size: 14px;
+}
+
+#box_right .box_content .content .transaction .box-item .note {
+    width: 100%;
+    height: 60px;
+    border-radius: 6px;
+    border: 1px solid var(--color-grey-1);
+    cursor: pointer;
+    padding: 8px 8px;
+}
+
+#box_right .box_content .content .transaction .box-item .input-text {
+    width: 100%;
+    height: 60px;
+    border-radius: 6px;
+    border: 1px solid var(--color-grey-1);
+    cursor: pointer;
+    padding: 8px 8px;
+}
+
+#box_right .box_content .content .transaction .box-item .dropzone .dz-message {
+    margin: 0;
+    text-align: left;
+}
+
+#box_right .box_content .content .transaction .box-item .dropzone .msg1 {
+    font-size: 18px;
+}
+
+#box_right .box_content .content .transaction .box-item .dropzone .msg1 span {
+    color: var(--color-teal-1);
+}
+
+#box_right .box_content .content .transaction .box-item .dropzone .msg2 {
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+#box_right .box_content .content .transaction .box-item .dropzone .msg3 {
+    font-size: 14px;
+    margin-top: 14px;
+}
+
+#box_right .box_content .content .transaction .box-item .detail {
+    height: 60px;
+    border-radius: 6px;
+    border: 1px solid var(--color-grey-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px 0 8px;
+    cursor: pointer;
+}
+
+#box_right .box_content .content .transaction .box-item .detail:hover {
+    border-color: #6e6e6e;
+}
+
+#box_right .box_content .content .transaction .box-item .detail .detail-info {
+    display: flex;
+    align-items: center;
+}
+
+#box_right .box_content .content .transaction .box-item .detail .avatar {
+    width: 45px;
+    height: 45px;
+}
+
+
+/* Start Modal category */
+#modal-wallet .modal-header,
+#modal-category .modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+#modal-wallet .modal-header .modal-title,
+#modal-category .modal-header .modal-title {
+    font-size: 18px;
+}
+
+#modal-wallet .modal-body .box-search,
+#modal-category .modal-body .box-search {
+    padding-bottom: 16px;
+}
+
+#modal-wallet .modal-body .box-search .input-group,
+#modal-category .modal-body .box-search .input-group {
+    position: relative;
+}
+
+#modal-wallet .modal-body .box-search .input-group .icon-search,
+#modal-category .modal-body .box-search .input-group .icon-search {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    z-index: 5;
+}
+
+#modal-wallet .modal-body .box-search input,
+#modal-category .modal-body .box-search input {
+    padding-left: 16px;
+    padding-right: 44px;
+}
+
+#modal-wallet .modal-body .box-search input::placeholder,
+#modal-category .modal-body .box-search input::placeholder {
+    font-size: 14px;
+    color: #999;
+    font-style: italic;
+}
+
+#modal-wallet .modal-body .nav-tabs .nav-link,
+#modal-category .modal-body .nav-tabs .nav-link {
+    color: var(--color-black-3);
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#modal-wallet .modal-body .nav-tabs .nav-link.active,
+#modal-category .modal-body .nav-tabs .nav-link.active {
+    color: var(--color-teal-1);
+}
+
+#modal-wallet .modal-body .list-item,
+#modal-category .modal-body .list-item {
+    height: 59vh;
+    overflow: auto;
+    padding: 12px 32px;
+}
+
+#modal-wallet .modal-body .list-item .detail,
+#modal-category .modal-body .list-item .detail {
+    border-bottom: 1px solid var(--color-grey-2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 6px 20px;
+    margin: 2px 0px;
+}
+
+#modal-wallet .modal-body .list-item .detail:last-child,
+#modal-category .modal-body .list-item .detail:last-child {
+    border: none;
+}
+
+#modal-wallet .modal-body .list-item .detail:hover,
+#modal-category .modal-body .list-item .detail:hover {
+    background: var(--color-teal-3);
+}
+
+#modal-wallet .modal-body .list-item .detail.active,
+#modal-category .modal-body .list-item .detail.active {
+    background: var(--color-teal-3);
+}
+
+#modal-wallet .modal-body .list-item .detail i,
+#modal-category .modal-body .list-item .detail i {
+    color: var(--color-teal-1);
+}
+
+#modal-wallet .modal-body .list-item .detail .detail-info,
+#modal-category .modal-body .list-item .detail .detail-info {
+    display: flex;
+    align-items: center;
+}
+
+#modal-wallet .modal-body .list-item .detail .avatar,
+#modal-category .modal-body .list-item .detail .avatar {
+    width: 45px;
+    height: 45px;
+}
+/* End Modal category*/
+
+/* Scroll to top */
+#scrollToTopBtn {
+    display: none;
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 23px;
+    right: 23px;
+    z-index: 1000;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555;
+}
+
+@media (max-width: 992px) { 
+    #box_sidebar {
+        display: none;
+    }
+
+    #box_right .box_content {
+        padding: 64px 14px 14px 14px;
+    }
+}
+
+
+@media (max-width: 1400px) { 
+    #box_right .box_content .content .transaction .box-item .dropzone .dz-message {
+        margin: 0;
+        text-align: left;
+    }
+    
+    #box_right .box_content .content .transaction .box-item .dropzone .msg1 {
+        font-size: 15px;
+    }
+    
+    #box_right .box_content .content .transaction .box-item .dropzone .msg1 span {
+        color: var(--color-teal-1);
+    }
+    
+    #box_right .box_content .content .transaction .box-item .dropzone .msg2 {
+        font-size: 13px;
+        margin-top: 12px;
+    }
+    
+    #box_right .box_content .content .transaction .box-item .dropzone .msg3 {
+        font-size: 13px;
+        margin-top: 6px;
+    }
+}
